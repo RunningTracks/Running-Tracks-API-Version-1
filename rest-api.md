@@ -210,6 +210,7 @@ None
          "name":"RNTR Token",
          "description":"",
          "fuel":1,
+         "xp":1,
          "available_now":1
       },
       
