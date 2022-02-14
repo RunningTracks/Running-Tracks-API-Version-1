@@ -13,6 +13,7 @@
 - Daily Contests
   - [Ticket Price](#ticket-price) (contests/ticket-price/)
   - [Schedule](#schedule) (contests/schedule/)
+  - [Recent Winners](#recent-winners) (contests/recent-winners/)
 - Map
   - [Locations](#map-locations) (map/locations/)
 - Inventory
@@ -251,6 +252,42 @@ from | 1 | NO |  | Provide a unix timestamp to set the list from the time
             "rewarded":0            
          }
     
+
+```
+
+## Recent Winners
+A list of the 100 most recent users to be awarded tokens on the play-to-earn contests.
+
+```
+https://runningtracks.net/api/v1/contests/recent-winners/
+```
+
+**Parameters:**
+None
+
+**Successful Response Payload:**
+
+```javascript
+{
+
+"data":{
+      "timezone":"UTC",
+      "recent":[
+         {
+            "id":1,
+            "time_created":1644863856,
+            "contest_id":109,
+            "uid":1000292,
+            "username":"_scoobrunner_",
+            "awarded":18.484031,
+            "country":"UK",
+            "x":18,
+            "y":27,
+            "contest_runtime":1092
+         }
+      ]
+
+
 
 ```
 
