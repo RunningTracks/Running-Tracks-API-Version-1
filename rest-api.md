@@ -12,6 +12,7 @@
  	- [XP Levels](#xp-levels) (system/xp-levels/)
 - Daily Contests
   - [Ticket Price](#ticket-price) (contests/ticket-price/)
+  - [Schedule](#schedule) (contests/schedule/)
 - Map
   - [Locations](#map-locations) (map/locations/)
 - Inventory
@@ -195,6 +196,10 @@ The daily contests enable users to win a share of the daily prize pool [daily-pr
 ```
 https://runningtracks.net/api/v1/contests/ticket-price/
 ```
+
+**Parameters:**
+None
+
 **Successful Response Payload:**
 
 ```javascript
@@ -211,6 +216,42 @@ https://runningtracks.net/api/v1/contests/ticket-price/
       ],
       "last_revision":1644834944110
    },
+```
+
+## Schedule
+The schedule defaults to `upcoming` and provides information related to scheduled contests.
+
+```
+https://runningtracks.net/api/v1/contests/schedule/
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+type | 1 | NO |  | `upcoming` or `past`. Defaults to `upcoming`
+from | 1 | NO |  | Provide a unix timestamp to set the list from the time
+
+**Successful Response Payload:**
+
+```javascript
+{
+   "data":{
+      "timezone":"UTC",
+      "upcoming":[
+         {
+            "id":1,
+            "timezone":"UTC",
+            "time_announced":1644861939010,
+            "time_start":1644883200000,
+            "time_finish":1644966000000,
+            "map_coordinates":"10,17",
+            "participants_completed":0,
+            "participants_enrolled":18720,
+            "completed":0,
+            "rewarded":0            
+         }
+    
+
 ```
 
 ## Map Locations
