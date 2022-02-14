@@ -9,6 +9,7 @@
   - [Check Server Time](#check-server-time) (system/timestamp/)
  	- [Ping Test](#ping-test) (system/ping/)
  	- [Online Statistics](#online-statistics) (system/online/)
+ 	- [XP Levels](#xp-levels) (system/xp-levels/)
 - Map
   - [Locations](#map-locations) (map/locations/)
 - Inventory
@@ -148,6 +149,41 @@ None
  },
 
 ```
+
+
+## XP Levels
+XP Levels are provided everytime a user passes a set threshold. XP levels are subject to change. A notes array will be provided to keep the user up to date of any changes.
+
+```
+https://runningtracks.net/api/v1/system/xp-levels/
+```
+
+**Parameters:**
+None
+
+**Successful Response Payload:**
+
+```javascript
+{
+  
+{
+   "data":{
+      "levels":{
+         "1":{
+            "from":0,
+            "prize":0
+         },
+         "2":{
+            "from":4040,
+            "prize":1
+         },
+         "3":{
+            "from":9180,
+            "prize":1
+         },
+      
+```
+
 
 ## Map Locations
 The endpoint provides a full list of available land with the ability to provide parameters to concentrate on a specific coordinate.
