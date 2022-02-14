@@ -10,6 +10,8 @@
  	- [Ping Test](#ping-test) (system/ping/)
  	- [Online Statistics](#online-statistics) (system/online/)
  	- [XP Levels](#xp-levels) (system/xp-levels/)
+- Daily Contests
+  - [Ticket Price](#ticket-price) (contests/ticket-price/)
 - Map
   - [Locations](#map-locations) (map/locations/)
 - Inventory
@@ -184,6 +186,32 @@ None
       
 ```
 
+
+## Ticket Price
+The daily ticket price has a cost associoated, this as of time of writing is related to the `fuel` you collect while active. The price for entry can vary based on market conditions.
+
+The daily contests enable users to win a share of the daily prize pool [daily-prize-pool.md](./daily-prize-pool.md). 
+
+```
+https://runningtracks.net/api/v1/contests/ticket-price/
+```
+**Successful Response Payload:**
+
+```javascript
+"data":{
+      "pament_methods":[
+         {
+            "method":"fuel",
+            "amount":5000
+         },
+         {
+            "method":"rntr",
+            "amount":5
+         }
+      ],
+      "last_revision":1644834944110
+   },
+```
 
 ## Map Locations
 The endpoint provides a full list of available land with the ability to provide parameters to concentrate on a specific coordinate.
