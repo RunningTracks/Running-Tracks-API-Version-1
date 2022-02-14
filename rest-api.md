@@ -12,7 +12,7 @@
 - Map
   - [Locations](#map-locations) (map/locations/)
 - Inventory
-  - [Available Inventory](#available-inventory) (map/locations/)
+  - [Available Inventory](#available-items) (inventory/available-items/)
   
 
 # Public REST API Version 1
