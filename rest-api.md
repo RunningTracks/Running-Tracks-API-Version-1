@@ -9,9 +9,9 @@
   - [Check Server Time](#check-server-time) (system/timestamp/)
  	- [Ping Test](#ping-test) (system/ping/)
  	- [Online Statistics](#online-statistics) (system/online/)
-Map
+- Map
   - [Locations](#map-locations) (map/locations/)
-Inventory
+- Inventory
   - [Available Inventory](#available-inventory) (map/locations/)
   
 
