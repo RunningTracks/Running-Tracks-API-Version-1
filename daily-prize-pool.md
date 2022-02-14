@@ -7,6 +7,9 @@ Anyone can enter Running Tracks, earn `fuel` and then redeem that `fuel` for a p
 ## Prize Pool Runtime
 The prize pool runtime will run from 1st March 2022 until 1st March 2036. This allows for 5,479 days of distrubution of tokens. This eqautes to roughly 18,251 RNTR tokens that will be distrubuted daily in contests and to land owners.
 
+## Portion reserved for inventory `rntr` token drops
+A unspecified amount of tokens will be dropped each day as part of the `inventory drops` that take place. Inventory drops exist to provide such items as `apples`, `oranges` and `mushrooms` (see full list of [available inventory](./rest-api.md#available-items)) to active users to discover on their journey.
+
 ## Land owners rewards for hosting
 Land owners will receive `hosting rewards` should their land be selected to host a daily contest. There are a number of factors based around how selection for hosting an event works.
 
