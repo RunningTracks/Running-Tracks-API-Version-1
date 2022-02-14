@@ -18,6 +18,7 @@
   - [Locations](#map-locations) (map/locations/)
 - Inventory
   - [Available Inventory](#available-items) (inventory/available-items/)
+  - [Inventory Drops](#inventory-drops) (inventory/inventory-drops/)
   
 
 # Public REST API Version 1
@@ -159,7 +160,7 @@ None
 XP Levels are provided everytime a user passes a set threshold. XP levels are subject to change. A notes array will be provided to keep the user up to date of any changes.
 
 ```
-https://runningtracks.net/api/v1/system/xp-levels/
+GET https://runningtracks.net/api/v1/system/xp-levels/
 ```
 
 **Parameters:**
@@ -195,7 +196,7 @@ The daily ticket price has a cost associoated, this as of time of writing is rel
 The daily contests enable users to win a share of the daily prize pool [daily-prize-pool.md](./daily-prize-pool.md). 
 
 ```
-https://runningtracks.net/api/v1/contests/ticket-price/
+GET https://runningtracks.net/api/v1/contests/ticket-price/
 ```
 
 **Parameters:**
@@ -223,7 +224,7 @@ None
 The schedule defaults to `upcoming` and provides information related to scheduled contests.
 
 ```
-https://runningtracks.net/api/v1/contests/schedule/
+GET https://runningtracks.net/api/v1/contests/schedule/
 ```
 
 **Parameters:**
@@ -259,7 +260,7 @@ from | 1 | NO |  | Provide a unix timestamp to set the list from the time
 A list of the 100 most recent users to be awarded tokens on the play-to-earn contests.
 
 ```
-https://runningtracks.net/api/v1/contests/recent-winners/
+GET https://runningtracks.net/api/v1/contests/recent-winners/
 ```
 
 **Parameters:**
@@ -358,4 +359,75 @@ None
       
 ```
 
+## Inventory Drops
+Inventory drops are a constant, where new inventory is released into the metaverse to be collected by players on their travels. Some inventory is more valuable, so it is less frequently dropped. For example, RNTR token is dropped as part of the daily stimulus to be picked up by users as they progress through the universe. Exact coordinates of where the inventory drops on the map are hidden.
 
+```
+GET https://runningtracks.net/api/v1/inventory/inventory-drops/
+```
+
+**Parameters:**
+None
+
+**Successful Response Payload:**
+
+```javascript
+{
+   "data":[
+      {
+         "time":1644864224000,
+         "land_x":19,
+         "land_y":29,
+         "type":"apple",
+         "amount":20,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      },
+      {
+         "time":1644864224000,
+         "land_x":1,
+         "land_y":5,
+         "type":"rntr",
+         "amount":2,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      },
+      {
+         "time":1644864224000,
+         "land_x":4,
+         "land_y":3,
+         "type":"apple",
+         "amount":30,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      },
+      {
+         "time":1644864224000,
+         "land_x":5,
+         "land_y":2,
+         "type":"banana",
+         "amount":120,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      },
+      {
+         "time":1644864224000,
+         "land_x":5,
+         "land_y":5,
+         "type":"apple",
+         "amount":40,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      },
+      {
+         "time":1644860220000,
+         "land_x":1,
+         "land_y":5,
+         "type":"rntr",
+         "amount":2,
+         "map_x":"HIDDEN",
+         "map_y":"HIDDEN"
+      }
+   ],
+
+```
