@@ -11,6 +11,8 @@
  	- [Online Statistics](#online-statistics) (system/online/)
 Map
   - [Locations](#map-locations) (map/locations/)
+Inventory
+  - [Available Inventory](#available-inventory) (map/locations/)
   
 
 # Public REST API Version 1
@@ -186,7 +188,31 @@ You can request information and statistics relating specifically to a x,y plot b
 GET https://runningtracks.net/api/v1/map/locations/?x=17&y=30
 ```
 
+## Available Items
+A list of all the available inventory from in the game. The Fuel and XP provided by an item is subject to change. The `available_now` provides a rea time look at how many items are currently unclaimed and scattered in the running tracks metaverse.
 
+```
+GET https://runningtracks.net/api/v1/inventory/available-items/
+```
 
+**Parameters:**
+None
+
+**Successful Response Payload:**
+
+```javascript
+{
+  
+ "data":[
+      {
+         "id":1,
+         "icon":"rntr",
+         "name":"RNTR Token",
+         "description":"",
+         "fuel":1,
+         "available_now":1
+      },
+      
+```
 
 
