@@ -18,4 +18,5 @@ Name | Description
 [rest-api.md](./rest-api.md) | Detailed information on the Rest API (/api/v1)
 [errors.md](./errors.md) | Details and descriptions of error messages from the Rest API
 [daily-prize-pool.md](./daily-prize-pool.md) | High level overview of the RNTR token daily prize
+[avatar-control.md](./avatar-control.md) | `hardware` and `controller` types explained
 
