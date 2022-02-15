@@ -20,6 +20,7 @@
   - [Available Inventory](#available-items) (inventory/available-items/)
   - [Inventory Drops](#inventory-drops) (inventory/inventory-drops/)
 - Leaderboards
+  - [Leaderboard Segments](#leaderboard-segments) (leaderboards/segments/)  
   - [Leaderboards List](#leaderboards-list) (leaderboards/list/)  
 
 # Public REST API Version 1
@@ -433,7 +434,7 @@ None
 
 ```
 
-## Leaderboards Segments
+## Leaderboard Segments
 List all segments for a specific land. Segments are portions of tracks inside an individual land which are tracked for time trials. You can select between two types of leaderboards that represent the options a user has.
 
 ```
