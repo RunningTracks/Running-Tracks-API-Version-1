@@ -19,7 +19,8 @@
 - Inventory
   - [Available Inventory](#available-items) (inventory/available-items/)
   - [Inventory Drops](#inventory-drops) (inventory/inventory-drops/)
-  
+- Leaderboards
+  - [Leaderboards List](#leaderboards-list) (leaderboards/list/)  
 
 # Public REST API Version 1
 
@@ -430,4 +431,77 @@ None
       }
    ],
 
+```
+
+## Leaderboards Segments
+List all segments for a specific land. Segments are portions of tracks inside an individual land which are tracked for time trials. You can select between two types of leaderboards that represent the options a user has.
+
+```
+GET https://runningtracks.net/api/v1/leaderboards/segments/
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+type | 1 | YES | `hardware` | `hardware` or `controller`
+x | 1 | YES |  | Provide the Map X coordinate, Y coordinate must also be provided
+y | 1 | YES |  | Provide the Map Y coordinate, X coordinate must also be provided
+
+**Successful Response Payload:**
+
+```javascript
+"data":{
+      "segments":[
+         {
+            "segment_id":1,
+            "time_created":1644912921000,
+            "map_x":2,
+            "map_y":18,
+            "coordinates":"",
+            "hardware_completed":109,
+            "controller_completed":20
+         }
+      ]
+   },
+```
+
+## Leaderboards List
+Leaderboards are a constantly evolving and updating component of running tracks, therefore parameters are required. You must provide the map coordinates of the land you wish to look-up. You can provide an optional `segement_id` for the specific land.
+
+```
+GET https://runningtracks.net/api/v1/leaderboards/list/
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+type | 1 | YES | `hardware` | `hardware` or `controller`
+x | 1 | YES |  | Provide the Map X coordinate, Y coordinate must also be provided
+y | 1 | YES |  | Provide the Map Y coordinate, X coordinate must also be provided
+segment_id | 1 | NO |  | Refer to `leaderboards/segments/` to get a list of segment ids for the land
+
+
+**Successful Response Payload:**
+
+```javascript
+{
+   "data":{
+      "leaderboards":[
+         {
+            "id":0,
+            "time_created":1644912590100,
+            "type":"hardware",
+            "segment_id":1,
+            "map_x":2,
+            "map_y":18,
+            "uid":1928201,
+            "username":"FirghtMight",
+            "time_start":1644912000000,
+            "time_finish":1644912589000,
+            "time_runtime_ms":589000,
+            "personal_best":0,
+            "contest":0
+         }
+      ]
+   },
 ```
