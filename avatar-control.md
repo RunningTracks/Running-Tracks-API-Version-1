@@ -1,5 +1,5 @@
 # Avatar Control
-There are two primary types of avatar control in which are available in Running Tracks. The primary, which is health centric, is concentrated on `hardware`, followed by `controller (also referred to as `h` and `c`).
+There are two primary types of avatar control in which are available in Running Tracks. The primary, which is health centric, is concentrated on `hardware`, followed by `controller` (also referred to as `h` and `c`).
 
 ## Hardware based health
 Running Tracks heavily leans towards allowing a user to be active while they play, we endorse and want to push users into the direction of connecting run tracker hardware so a user can participate while on their treadmill.
