@@ -2,7 +2,7 @@
 ![Running Tracks API Version 1](https://i.imgur.com/dgYYQTf.jpg)
 
 # Running Tracks API Version 1 Documentation
-Running Tracks version 1 is now in BETA, accepting applications for testing.
+Running Tracks version 1 is now in BETA, accepting applications for testing. Both `hardware` and `controller` types available.
 
 # Public API Access
 As of today (11th February 2022) we are releasing public endpoints to be available to the public for usage. 
