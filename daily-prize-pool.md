@@ -1,5 +1,14 @@
-# Ecosystem Prize Pool
-Running Tracks will distrbute 100,000,000 `RNTR` tokens from the 1,000,000,000 minted to the community over a period of 15 years.
+# The Eco-system Prize Pool
+Running Tracks will distrbute 100,000,000 `RNTR` tokens from the 1,000,000,000 minted to the community over a period of 15 years. These funds are primarily used to stimulate play 2 earn.
+
+All tokens will be distrubuted over the course of the day by a company with a split applied (subject to change). 
+
+- Daily Contests Distrubution
+  - Split over several contests
+- Land Owner Hosting Reward
+- Inventory drops.
+
+The manner in which this is split is subject to change based on the companies on-going feedback. However, the daily prize pool will not change downwards. In the event that not all tokens have been distrubuted in a 24 hour period, then that amount will rollover to the next day.
 
 ## Free-to-play
 Anyone can enter Running Tracks, earn `fuel` and then redeem that `fuel` for a place in a daily contests.
@@ -12,6 +21,9 @@ A unspecified amount of tokens will be dropped each day as part of the `inventor
 
 ## Land owners rewards for hosting
 Land owners will receive `hosting rewards` should their land be selected to host a daily contest. There are a number of factors based around how selection for hosting an event works.
+
+## How rollovers work
+Rollovers happen in the event that some tokens remain from the previous day. Events such as potential outages, or technical errors around drops can possibly occur. In this event the tokens not distrubuted on that day will be rolled to the next 24 hour period.
 
 ## Current Status
 The current status of this propsoal is in the last stage of approval and is subject to change.
