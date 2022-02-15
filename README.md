@@ -19,4 +19,5 @@ Name | Description
 [errors.md](./errors.md) | Details and descriptions of error messages from the Rest API
 [daily-prize-pool.md](./daily-prize-pool.md) | High level overview of the RNTR token daily prize
 [avatar-control.md](./avatar-control.md) | `hardware` and `controller` types explained
+[supported-hardware.md](./supported-hardware.md) | List of supported hardware 
 
