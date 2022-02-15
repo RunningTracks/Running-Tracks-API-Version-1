@@ -21,3 +21,7 @@ Name | Description
 [avatar-control.md](./avatar-control.md) | `hardware` and `controller` types explained
 [supported-hardware.md](./supported-hardware.md) | List of supported hardware 
 
+# Land Parcels
+![Metaverse Land Parcels](https://i.imgur.com/MZsQ5Fx.jpeg)
+Our metaverse land parcels have been confirmed. Inline with our original white paper, we intend to map our `hardware` component to `71.6456050,-28.6577627` as the starting position which enables streamlined access to platforms that require coordinates to be added.
+
