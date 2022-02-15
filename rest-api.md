@@ -16,6 +16,7 @@
   - [Recent Winners](#recent-winners) (contests/recent-winners/)
 - Map
   - [Locations](#map-locations) (map/locations/)
+  - [Users Online](#users-online) (map/users-online/)
 - Inventory
   - [Available Inventory](#available-items) (inventory/available-items/)
   - [Inventory Drops](#inventory-drops) (inventory/inventory-drops/)
@@ -331,6 +332,95 @@ You can request information and statistics relating specifically to a x,y plot b
 
 ```
 GET https://runningtracks.net/api/v1/map/locations/?x=17&y=30
+```
+
+## Users Online
+As part of the effort to be transparent about users on the platform, we provide this end point to provide an indication of where all users are located
+
+```
+GET https://runningtracks.net/api/v1/map/users-online/
+```
+
+**Parameters:**
+Name | MinLength | Required | Default | Description
+------------ | ------------ | ------------ | ------------ | ------------
+map_x | 1 | NO |  | Provide the X coordinate, Y coordinate must also be provided
+map_y | 1 | NO |  | Provide the Y coordinate, X coordinate must also be provided
+
+**Successful Response Payload:**
+
+```javascript
+{
+   "data":{
+      "all":[
+         {
+            "time_created":1644896791542,
+            "last_updated":1644916632961,
+            "uid":1000099,
+            "username":"<redacted>",
+            "speed":0,
+            "distance":4500.6953125,
+            "map_x":0,
+            "map_y":0,
+            "land_x":200,
+            "land_y":0.01,
+            "lat":0.002,
+            "lon":0.00204,
+            "avgspeed":0.2268,
+            "calories":450.07,
+            "km_1":0,
+            "km_3":0,
+            "km_5":0,
+            "mps":0,
+            "top_speed":7.81875,
+            "country":"US"
+         },
+         {
+            "time_created":1644896792004,
+            "last_updated":1644916632998,
+            "uid":1000429,
+            "username":"<redacted>",
+            "speed":0,
+            "distance":0,
+            "map_x":0,
+            "map_y":0,
+            "land_x":200,
+            "land_y":0.01,
+            "lat":0.002,
+            "lon":0.00204,
+            "avgspeed":0,
+            "calories":0,
+            "km_1":0,
+            "km_3":0,
+            "km_5":0,
+            "mps":0,
+            "top_speed":0,
+            "country":"US"
+         },
+         {
+            "time_created":1644896792979,
+            "last_updated":1644916633014,
+            "uid":1000336,
+            "username":"<redacted>",
+            "speed":0,
+            "distance":5262.99609375,
+            "map_x":0,
+            "map_y":0,
+            "land_x":200.30529473,
+            "land_y":0.01,
+            "lat":0.00200305,
+            "lon":0.00181542,
+            "avgspeed":0.2653,
+            "calories":526.3,
+            "km_1":0,
+            "km_3":0,
+            "km_5":0,
+            "mps":0,
+            "top_speed":12,
+            "country":"US"
+         }
+      ]
+   },
 ```
 
 ## Available Items
